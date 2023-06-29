@@ -11,7 +11,7 @@ param(
 
         ## Resource Group Location, westsu, eastus,eastasia...
         [Parameter(HelpMessage="Resource Group Location, westsu, eastus,eastasia...")]
-        [string]$location='eastus',
+        [string]$location='eastus2',
         ## Azure OpenAI Base URL
         [Parameter(Mandatory,HelpMessage="Azure OpenAI Base URL")]        
         [string]$apiBase,
@@ -100,7 +100,7 @@ param(
         PrintMsg "Run in Azure Shell, Bot App Registration & Bot App Azure Resources will be created in the same subscription"
     }
 
-    $resourceGroup = $baseName+"RG"
+    $resourceGroup = $baseName
     $appSettingFilePath= '.\code\settings\appsettings.json'
     $zipfile = '.\code.zip' 
     $newZipFile= './myCode.zip' 
