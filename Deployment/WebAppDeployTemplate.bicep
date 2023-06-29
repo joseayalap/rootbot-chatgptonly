@@ -1,6 +1,5 @@
 @description('The name of you Web Site.')
-//param siteName string = 'RootBot-${uniqueString(resourceGroup().id)}'
-param siteName string = 'CEMEX ChatGPT'
+param siteName string = 'RootBot-${uniqueString(resourceGroup().id)}'
 
 @description('Location for all resources.')
 param location string = resourceGroup().location
