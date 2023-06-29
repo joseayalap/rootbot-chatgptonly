@@ -272,7 +272,6 @@ param(
     #>
     Write-Progress -Activity 'Deploy code.zip to Azure Web App'  -PercentComplete 90    
     $appName = $(az deployment group show  -g $resourceGroup  -n WebAppDeployTemplate --query properties.outputs.webappname.value --output tsv)
-    $appName = "CEMEX-ChatGPT"
     PrintMsg "Deploy code.zip to Azure Web App ${appName}"
     az webapp deploy --resource-group $resourceGroup --name $appName --src-path "./code.zip"
 
