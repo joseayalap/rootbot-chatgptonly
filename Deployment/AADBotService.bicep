@@ -1,5 +1,4 @@
-//param botServices_rootbot01_name string = 'RootBot-${uniqueString(resourceGroup().id)}'
-param botServices_rootbot01_name string = 'CEMEX ChatGPT'
+param botServices_rootbot01_name string = 'RootBot-${uniqueString(resourceGroup().id)}'
 param botAppId string
 
 resource botServices_rootbot01_name_resource 'Microsoft.BotService/botServices@2022-09-15' = {
