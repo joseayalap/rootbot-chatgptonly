@@ -1,0 +1,15 @@
+[import](common.lg)
+
+# SendActivity_tRzNOk()
+[Activity
+    Attachments = ${SendActivity_tRzNOk_attachment_wHREcV()}
+]
+
+# SendActivity_tRzNOk_attachment_wHREcV()
+
+[HeroCard
+    title = CEMEX ChatGPT
+    text = Hi ${turn.activity.from.name}, I'm an intelligent GPT-based bot ready to interact with CEMEX users in a secure way, even when prompted with CEMEX related data. Please note that each prompt I handle currently has a limit of around 2000 words. You can say "Hi" to show the home menu or "Bye" to end the conversation. I keep previous context of conversations until they are ended.  It's important to know that I am using the public ChatGPT model, which provides responses based on its training data and algorithms. While I strive to provide the most accurate and relevant information possible, please exercise caution and use your own discretion when applying the information provided by ChatGPT. Let me know how I can assist you today.
+    image = https://fllivesharepoc.azurewebsites.net/greeting.png
+    buttons = ChatGPT  
+]
